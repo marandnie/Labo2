@@ -2,16 +2,15 @@ Universidad Nacional de San Martín
 Guía de Ejercicios
 Unidad 1: Variables, ciclos y control de flujo
 1 Ejercicios
-1.1 Comparaci´on de dos n´umeros
-Escribe un programa que solicite al usuario ingresar dos n´umeros enteros y luego
-imprima el mayor de los dos. Si son iguales que imprima ’son iguales’.
-1.2 Verificaci´on de n´umero par o impar
+1.1 Comparación de dos números
+Escribe un programa que solicite al usuario ingresar dos números enteros y luego imprima el mayor de los dos. Si son iguales que imprima ’son iguales’.
+1.2 Verificación de número par o impar
 Desarrolla un programa que solicite al usuario ingresar un n´umero entero e
 imprima si es par o impar.
 Ayuda: La siguiente sentencia verifica si el resto de dividir num por
 2 es 0
 num % 2 == 0
-1.3 Verificaci´on de a˜no bisiesto
+1.3 Verificación de año bisiesto
 Escribe un programa que solicite al usuario ingresar un a˜no e imprima si es
 bisiesto o no. Un a˜no es bisiesto si es divisible por 4 pero no por 100, o si es
 divisible por 400.
