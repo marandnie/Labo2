@@ -1,5 +1,5 @@
-Universidad Nacional de San Mart´ın
-Gu´ıa de Ejercicios
+Universidad Nacional de San Martín
+Guía de Ejercicios
 Unidad 1: Variables, ciclos y control de flujo
 1 Ejercicios
 1.1 Comparaci´on de dos n´umeros
