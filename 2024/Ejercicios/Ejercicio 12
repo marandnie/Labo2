@@ -1,0 +1,50 @@
+12. Juego de Adivinar el Número
+
+Desarrolla un juego en el que el programa selecciona un número aleatorio entre 1 y 100, y el usuario intenta adivinarlo. El programa debe dar pistas (mayor/-menor) y contar el número de intentos.
+
+Ayuda: Use el siguiente codigo para generar un numero aleatorio.
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int numero_secreto = rand() % 100 + 1; // Genera un n´umero aleatorio entre 1 y 100
+    //inserte su codigo aqui
+    return 0;
+}
+```
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int numero_secreto = rand() % 100 + 1; // Genera un número aleatorio entre 1 y 100
+    int intento, intentos_realizados = 0;
+
+    printf("Bienvenido al juego de Adivinar el Número!\n");
+
+    do {
+        // Solicitar al usuario que ingrese un intento
+        printf("Intenta adivinar el número (entre 1 y 100): ");
+        scanf("%d", &intento);
+        
+        // Incrementar el contador de intentos realizados
+        intentos_realizados++;
+
+        // Comparar el intento con el número secreto y dar pistas
+        if (intento > numero_secreto) {
+            printf("El número secreto es menor.\n");
+        } else if (intento < numero_secreto) {
+            printf("El número secreto es mayor.\n");
+        } else {
+            printf("¡Felicidades! ¡Adivinaste el número secreto %d en %d intentos!\n", numero_secreto, intentos_realizados);
+        }
+    } while (intento != numero_secreto);
+
+    return 0;
+}
