@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float ahorro_mensual;
+    float saldo = 0;
+    float interes_mensual = 0.35; // 35% de interés mensual
+    int meses_en_un_ano = 12;
+
+    // Solicitar al usuario la cantidad de dinero que quiere ahorrar mensualmente
+    printf("Ingrese la cantidad de dinero que desea ahorrar mensualmente: $");
+    scanf("%f", &ahorro_mensual);
+
+    // Calcular el saldo acumulado después de un año considerando el interés mensual
+    for (int i = 0; i < meses_en_un_ano; i++) {
+        saldo += ahorro_mensual;
+        saldo *= (1 + interes_mensual);
+    }
+
+    // Imprimir el saldo acumulado después de un año
+    printf("Después de un año, el saldo acumulado en su cuenta de ahorro será: $%.2f\n", saldo);
+
+    return 0;
+}
