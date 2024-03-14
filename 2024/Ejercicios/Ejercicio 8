@@ -1,0 +1,30 @@
+8. Calculadora de Gastos
+
+Desarrolla una calculadora de gastos que solicite al usuario ingresar el precio de varios productos y luego calcule el total. El programa debe continuar pidiendo precios hasta que el usuario decida detenerse.
+
+
+#include <stdio.h>
+
+int main() {
+    float precio_producto;
+    float total = 0;
+    char opcion;
+
+    // Solicitar al usuario ingresar precios de productos
+    printf("Bienvenido a la Calculadora de Gastos.\n");
+    printf("Ingrese el precio del producto o 'q' para salir: ");
+
+    // Leer precios hasta que el usuario decida detenerse
+    while (scanf("%f", &precio_producto) == 1) {
+        total += precio_producto;
+        printf("Total actual: $%.2f\n", total);
+
+        // Solicitar al usuario si desea agregar más productos o salir
+        printf("Ingrese el precio del siguiente producto o 'q' para salir: ");
+    }
+
+    // Imprimir el total de gastos al salir del bucle
+    printf("Gasto total: $%.2f\n", total);
+
+    return 0;
+}
