@@ -1,0 +1,33 @@
+10. Calculadora de Índice de Masa Corporal (IMC)
+
+Escribe un programa que calcule el IMC de una persona. El usuario debe ingresar su peso en kilogramos y su altura en metros. El programa debe imprimir el IMC y una categoría correspondiente (bajo peso, peso normal, sobrepeso, etc.).
+#include <stdio.h>
+
+int main() {
+    float peso, altura, imc;
+
+    // Solicitar al usuario ingresar su peso en kilogramos
+    printf("Ingrese su peso en kilogramos: ");
+    scanf("%f", &peso);
+
+    // Solicitar al usuario ingresar su altura en metros
+    printf("Ingrese su altura en metros: ");
+    scanf("%f", &altura);
+
+    // Calcular el IMC
+    imc = peso / (altura * altura);
+
+    // Determinar la categoría correspondiente al IMC
+    printf("Su IMC es: %.2f\n", imc);
+    if (imc < 18.5) {
+        printf("Categoría: Bajo peso\n");
+    } else if (imc >= 18.5 && imc < 25) {
+        printf("Categoría: Peso normal\n");
+    } else if (imc >= 25 && imc < 30) {
+        printf("Categoría: Sobrepeso\n");
+    } else {
+        printf("Categoría: Obesidad\n");
+    }
+
+    return 0;
+}
