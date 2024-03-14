@@ -1,0 +1,21 @@
+9. Generador de Tablas de Multiplicar
+
+Crea un programa que solicite al usuario ingresar un número y luego imprima la tabla de multiplicar de ese número del 1 al 10.
+
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    // Solicitar al usuario ingresar un número
+    printf("Ingrese un número para generar su tabla de multiplicar del 1 al 10: ");
+    scanf("%d", &numero);
+
+    // Generar y mostrar la tabla de multiplicar
+    printf("Tabla de multiplicar del %d:\n", numero);
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", numero, i, numero * i);
+    }
+
+    return 0;
+}
