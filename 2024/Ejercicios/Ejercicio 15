@@ -1,0 +1,31 @@
+15. Calculadora de Factorial
+
+Crea un programa que solicite al usuario ingresar un número entero no negativo y luego calcule su factorial.
+
+
+#include <stdio.h>
+
+int main() {
+    int numero;
+    unsigned long long factorial = 1; // Usamos 'unsigned long long' para permitir un rango mayor de valores para el factorial
+
+    // Solicitar al usuario ingresar un número entero no negativo
+    printf("Ingrese un número entero no negativo: ");
+    scanf("%d", &numero);
+
+    // Verificar si el número ingresado es negativo
+    if (numero < 0) {
+        printf("El número ingresado es negativo. Por favor, ingrese un número entero no negativo.\n");
+        return 1;
+    }
+
+    // Calcular el factorial del número ingresado
+    for (int i = 1; i <= numero; i++) {
+        factorial *= i;
+    }
+
+    // Imprimir el factorial calculado
+    printf("El factorial de %d es: %llu\n", numero, factorial);
+
+    return 0;
+}
