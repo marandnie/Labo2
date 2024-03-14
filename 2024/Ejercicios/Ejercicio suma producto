@@ -1,0 +1,39 @@
+/******************************************************************************
+
+Ej de clase anterior
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+
+    int cantidad_numeros;
+    int suma = 0;
+    int producto = 1;
+
+    printf("Ingrese la cantidad de números que desea procesar: ");
+    scanf("%d", &cantidad_numeros);
+
+    printf("Ingrese los números uno por uno:\n");
+
+    for (int i = 0; i < cantidad_numeros; i++) {
+        int numero;
+        printf("Número %d: ", i + 1);
+        scanf("%d", &numero);
+
+        int *p_numero = &numero;
+        
+        //p_numero=&numero;
+
+        suma += *p_numero;
+        producto *= *p_numero;
+    }
+
+    printf("La suma de los números ingresados es: %d\n", suma);
+    printf("El producto de los números ingresados es: %d\n", producto);
+
+    return 0;
+}
+
