@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    // Solicitar al usuario ingresar un número entero positivo
+    printf("Ingrese un número entero positivo para iniciar el conteo regresivo: ");
+    scanf("%d", &numero);
+
+    // Verificar si el número ingresado es positivo
+    if(numero < 0) {
+        printf("Por favor, ingrese un número entero positivo.\n");
+        return 1;
+    }
+
+    // Realizar el conteo regresivo desde el número ingresado hasta 0
+    printf("¡Conteo regresivo para el despegue del cohete!\n");
+    for(int i = numero; i >= 0; i--) {
+        printf("%d\n", i);
+    }
+
+    printf("¡Despegue!\n");
+
+    return 0;
+}
