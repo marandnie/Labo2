@@ -1,0 +1,23 @@
+14. Validación de Edad para Acceso
+
+Desarrolla un programa que solicite al usuario ingresar su edad.
+Si es mayor de 18 años, imprime ”Bienvenido/a”; de lo contrario, imprime ”Acceso denegado”.
+
+#include <stdio.h>
+
+int main() {
+    int edad;
+
+    // Solicitar al usuario ingresar su edad
+    printf("Ingrese su edad: ");
+    scanf("%d", &edad);
+
+    // Validar si la edad es mayor de 18 años
+    if (edad > 18) {
+        printf("Bienvenido/a\n");
+    } else {
+        printf("Acceso denegado\n");
+    }
+
+    return 0;
+}
