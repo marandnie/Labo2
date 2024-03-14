@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int numero1, numero2;
+
+    // Solicitar al usuario ingresar dos números enteros
+    printf("Ingresa el primer número entero: ");
+    scanf("%d", &numero1);
+    printf("Ingresa el segundo número entero: ");
+    scanf("%d", &numero2);
+
+    // Verificar cuál número es mayor o si son iguales
+    if (numero1 > numero2) {
+        printf("El primer número (%d) es mayor que el segundo número (%d).\n", numero1, numero2);
+    } else if (numero2 > numero1) {
+        printf("El segundo número (%d) es mayor que el primer número (%d).\n", numero2, numero1);
+    } else {
+        printf("Los números ingresados son iguales.\n");
+    }
+
+    return 0;
+}
